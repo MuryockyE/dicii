@@ -1,0 +1,68 @@
+/* style.css */
+
+/* Style for the chat container */
+.container-fluid {
+    height: 100vh;
+}
+
+/* Style for the chat cards */
+.card {
+    height: 100%;
+}
+
+/* Style for the contacts sidebar */
+.contacts_card {
+    height: 100%;
+}
+
+/* Style for the chat messages */
+.msg_card_body {
+    height: calc(100% - 100px); /* Adjust the height of the messages container */
+    overflow-y: auto; /* Enable vertical scroll for overflow */
+}
+
+/* Style for the message input area */
+.type_msg {
+    height: 60px;
+    border: none;
+    padding-left: 15px;
+    border-radius: 30px;
+    resize: none;
+}
+
+/* Style for the message send button */
+.send_btn {
+    cursor: pointer;
+}
+
+/* Style for the online and offline status icons */
+.online_icon {
+    width: 15px;
+    height: 15px;
+    background: #4cd137;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.offline {
+    background: #e84118;
+}
+
+/* Style for the space container */
+.space {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #086ff7;
+}
+
+/* Media query for responsive design */
+@media (max-width: 576px) {
+    .contacts_card, .chat {
+        width: 100%;
+        max-width: 100%;
+    }
+}
